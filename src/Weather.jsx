@@ -18,7 +18,7 @@ function WeatherApp() {
 
   const getWeather = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/weather`, {
+      const response = await axios.get(`https://node-server2.vercel.app/`, {
         params: { city }
       });
       setWeather(response.data);
