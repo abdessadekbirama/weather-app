@@ -33,7 +33,7 @@ function WeatherApp() {
     <div className="bg-[url(/imgs/bg.jpg)] bg-cover min-h-screen">
       <div className="flex gap-2 w-fit m-auto pt-20">
       <input
-        className="border-2 border-blue-500 p-1 rounded"
+        className="border-2 border-blue-500 p-1 rounded outline-none"
         type="text"
         value={city}
         onChange={(e) => setCity(e.target.value)}
