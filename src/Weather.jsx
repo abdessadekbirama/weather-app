@@ -50,7 +50,7 @@ function WeatherApp() {
         <div className="sm:w-1/2 w-[300px] m-auto border-2 border-blue-400 rounded bg-[#04285787] text-white mt-10">
           <div className="flex justify-between items-center text-xl p-4 border-b-2 mx-2"><Icon icon={location}/><div className="flex gap-2">{weather.name}, {weather.sys.country} <img src={`https://openweathermap.org/images/flags/${weather.sys.country.toLowerCase()}.png`} alt="" className="w-10"/></div></div>
           <div className="flex justify-between items-center text-xl p-2 border-b-2"><img src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}.png`} /><div className="flex gap-2">{weather.weather[0].description}</div></div>
-          <div className="flex justify-between items-center text-xl p-4 border-b-2"><Icon className="text-2xl text-red-500" icon={therm}/><div className="flex gap-2">{weather.main.temp}°C</div></div>
+          <div className="flex justify-between items-center text-xl p-4 border-b-2"><Icon className="text-2xl text-red-500" icon={therm}/><div className="flex gap-2">{weather.main.temp.toFixed()}°C</div></div>
           <div className="flex justify-between items-center text-xl p-4 border-b-2"><Icon className="text-xl text-blue-200" icon={water}/><div className="flex gap-2">{weather.main.humidity}%</div></div>
           <div className="flex justify-between items-center text-xl p-4 border-b-2"><Icon className="text-2xl" icon={wind}/><div className="flex gap-2">{weather.wind.speed} m/s</div></div>
           <div className="flex justify-between items-center text-xl p-4"><Icon className="text-2xl" icon={press}/><div className="flex gap-2">{weather.main.temp} hPa</div></div>
