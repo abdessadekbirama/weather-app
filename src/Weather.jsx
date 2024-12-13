@@ -36,7 +36,7 @@ function WeatherApp() {
         className="border-2 border-blue-500 p-1 rounded outline-none"
         type="text"
         value={city}
-        onChange={(e) => setCity(e.target.value)}
+        onChange={(e) => setCity(e.target.value.trim())}
         placeholder="enter city name"
       />
       <button onClick={getWeather}
